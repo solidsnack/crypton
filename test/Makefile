@@ -17,7 +17,7 @@ setup-test-environment:
 
 clean-test-db:
 	@echo "Cleaning test database..."
-	-@sudo -u postgres dropdb crypton_test
+	-@dropdb crypton_test
 
 reset: clean-test-db setup-test-environment
 
